@@ -1,64 +1,71 @@
-body{
-    background-color: #A67F8E;
-    padding: 0;
-    margin: 0;
+body {
+  background-color: #0f172a;
+  padding: 0;
+  margin: 0;
 }
 
-.main{
-    width: 80vw;
-    margin: 0 10vw 0 10vw;
+.main {
+  width: 80vw;
+  margin: 0 10vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-header{
-    background-color: #6c534e;
-    position: sticky;
+.primary-text {
+  color: #e5e7eb;
 }
 
-nav{ 
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
+.secondary-text {
+  color: #9ca3af;
 }
 
-.nav-btn{
-    background-color: #6c534e;
-    border: 1px solid #B8D8BA;
-    color: #B8D8BA;
-    border-radius: 10px;
+a {
+  text-decoration: none;
+  color: #e5e7eb;
 }
 
-.nav-btn:hover{
-    background-color: #B8D8BA;
-    color: #6c534e;
+a:hover {
+  color: #14b8a6;
 }
 
-.hero{
-    background-color: #C89FA3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+header {
+  background-color: #111827;
+  position: sticky;
+  border-bottom: 1px solid #1f2937;
 }
 
-.action-btn{
-    display: inline-block;
-    background-color: #B8D8BA;
-    width: 10vw;
-    height: 5vh;
-    border-radius: 10px;
-    text-align: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
 }
 
-.action-btn:hover{
-    background-color: #B8D8BA;
-    color: green;
+.hero {
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-height: auto;
 }
 
-.forms{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
+.callToAction {
+  background-color: #8b5cf6;
+  margin: 2%;
+  padding: 2%;
+  width: 20%;
+  border-radius: 20px;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.appForms {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }

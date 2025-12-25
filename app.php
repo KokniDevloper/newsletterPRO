@@ -66,16 +66,16 @@ mysqli_close($conn);
         <header>
             <nav>
                 <h3>
-                    <a href="index.html">Newsletter Pro</a>
+                    <a class="primary-text" href="index.html">Newsletter Pro</a>
                 </h3>
                 <a href="logout.php">logout</a>
             </nav>
         </header>
         <div class="hero">
-            <h1>Newsletter Professional</h1>
-            <h2>Welcome</h2>
+            <h1 class="primary-text">Newsletter Professional</h1>
+            <h2 class="secondary-text">Welcome</h2>
             <br>
-            <div class="forms">
+            <div class="appForms secondary-text">
                 <!-- Insert -->
                 <form method="POST">
                     <fieldset>
@@ -122,7 +122,7 @@ mysqli_close($conn);
             </h3>
             <br>
             <div style="width:80%;height:1px;background:gray;"></div>
-            <div class="list">
+            <div class="list secondary-text">
                 <?php
                 if (mysqli_num_rows($result) == 0) {
                     echo "<h2>No Emails Inserted</h2>";
@@ -136,7 +136,6 @@ mysqli_close($conn);
                 }
                 ?>
             </div>
-
         </div>
     </div>
 </body>
